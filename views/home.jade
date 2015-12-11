@@ -29,10 +29,10 @@ html
               a(href='#MyInfo') My Info
             form.navbar-form.navbar-right
               .form-group
-                input.form-control(type='text', placeholder='Email')
+                input.form-control(type='text', placeholder=' #{user.firstName}')
               .form-group
-                input.form-control(type='password', placeholder='Password')
-              button.btn.btn-success(type='submit') Sign in
+                input.form-control(type='password', placeholder=' #{user.lastName}')
+              a(href='/signout', class='text-center new-account') Sign Out
             li.divider(role='separator')
         // /.nav-collapse
     div(ng-controller='MainController')
@@ -44,9 +44,6 @@ html
               div.signup-wall
               ul.user-details
               li Email  ==> #{user.email}
-              li First Name ==> #{user.firstName} 
-              li Last Name ==> #{user.lastName}
-              a(href='/signout', class='text-center new-account') Sign Out
               img(src='http://www.gettyimages.com/landing/assets/static_content/home/109393787_birds.jpg')
               #chart_div
       chart_div(style='width: 900px; height: 500px;')
