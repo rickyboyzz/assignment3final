@@ -3,8 +3,9 @@ block content
 	div.container
 		div.row
 			div.col-sm-6.col-md-4.col-md-offset-4
+				h1.text-center.login-title Welcome To My World
 					div.account-wall
-						img(src='/stylesheets/images/passportjs-logo.png', class='logo-img')
+						img(src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS02rGrBxRCLsJUwwxODfKD4QXqQQxGXFHoZGrY7NhpU76pT6cZ', class='logo-img')
 						form(class='form-signin', action='/login', method='POST')
 							input(type='text', name='username' class='form-control', placeholder='Username',required, autofocus)
 							input(type='password', name='password' class='form-control', placeholder='Password', required)
